@@ -2,7 +2,6 @@
 
 in this file i'm going to write down every comand i learn
 
---------------------------------------------------------------------------------
 
 ## help commands
 
@@ -12,7 +11,6 @@ in this file i'm going to write down every comand i learn
 | --help  | using this option with any command print all options and command structure on terminal without wrapping current tab | command + `--help`     | sshfs --help or cd --help   |          |
 | whatis  | use to ask for short description of any command                                                                     | whatis + `<command>`   | whatis man or what is mkdir |          |
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## directories and files modification commands
@@ -39,10 +37,9 @@ in this file i'm going to write down every comand i learn
 | ls -a     | using `-a` option list hidden files and directories along others                                                                              | ls -a `directory name`                                |                                                          |                                   |
 | ls -l     | use to list with extra description like permissions and date modification and so on                                                           | ls -l or ls -l `directory name`                       |                                                          |                                   |
 | cat       | using cat, you can print any file content inside terminal                                                                                     | cat `file name`                                       |                                                          |                                   |
-| sed       | using sed you can change part of text with given parameters(very interesting command)                                                         |                                                       |                                                          | [everything about sed](#extra_02) |
+| sed       | using sed you can change part of text with given parameters(very interesting command)                                                         |                                                       |                                                          | [everything about sed](#extra_03) |
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## ip and networking commands
@@ -66,7 +63,18 @@ in this file i'm going to write down every comand i learn
 | curl             | using curl to upload or download from (http, https, smtp, ftp)                                                                                                   | curl `<url>`                                                    | curl https://download.com/winrar.exe                |           |
 | curl -C - -O     | using options `-C - ` means continue from last seesion if download is interupted and `-O` captila o means use the default name when you're writing on my machine | curl -C - -O `<url>`                                            | curl -C - -O http://download.com/winrar.exe         |           |
 | curl ifconfig.me | use to print your public ip address                                                                                                                              |                                                                 |                                                     |           |
-        
 
+## super power command (sudo)
 
-
+| command         | description                                                                                         | structure                                     | example                                        | detail ID         |
+|-----------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------|-------------------|
+| sudo            | sudo means *super power do* what i want                                                             | sudo `<command>`                              | sudo mkdir                                     | [sudo](#extra_04) |
+| sudo su         | change user to `@root` for amitting sudo from any command                                           |                                               |                                                |                   |
+| su              | sometimes a machine has multiple user, to switch to another user you need this command              | su `username`                                 | su illustray                                   |                   |
+| apt             | command line interface or a command to install or remove packages in linux distros                  |                                               |                                                |                   |
+| apt install     | install packages from repository                                                                    | sudo apt install `<package name>`             | sudo apt install vlc                           |                   |
+| apt -y          | use `-y` option to pass yes if command needs permission, it gives yes to any asking for permissions | sudo apt `<option>` -y                        | sudo apt install vlc -y                        |                   |
+| apt remove      | remove packages                                                                                     | sudo apt remove `<package name>`              | sudo apt remove vlc -y                         |                   |
+| apt --purge     | use this option whenever you want to remove a package, purging means ask to clear any configuration | sudo apt remove --purge `<package name>` -y   | sudo apt remove --purge vlc -y                 | [sudo](#extra_05) |
+| apt list        | list installed or any existing packages in ubuntu repositories                                      | sudo apt list --installed                     |                                                |                   |
+| apt --reinstall | reinstall packages                                                                                  | sudo apt install --reinstall `<package name>` | sudo apt install --reinstall vlc sshfs fuse -y |                   |
