@@ -66,18 +66,21 @@ in this file i'm going to write down every comand i learn
 
 ## super power command (sudo)
 
-| command         | description                                                                                         | structure                                     | example                                        | detail ID         |
-|-----------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------|-------------------|
-| sudo            | sudo means *super power do* what i want                                                             | sudo `<command>`                              | sudo mkdir                                     | [sudo](#extra_04) |
-| sudo su         | change user to `@root` for amitting sudo from any command                                           |                                               |                                                |                   |
-| su              | sometimes a machine has multiple user, to switch to another user you need this command              | su `username`                                 | su illustray                                   |                   |
-| apt             | command line interface or a command to install or remove packages in linux distros                  |                                               |                                                |                   |
-| apt install     | install packages from repository                                                                    | sudo apt install `<package name>`             | sudo apt install vlc                           |                   |
-| apt -y          | use `-y` option to pass yes if command needs permission, it gives yes to any asking for permissions | sudo apt `<option>` -y                        | sudo apt install vlc -y                        |                   |
-| apt remove      | remove packages                                                                                     | sudo apt remove `<package name>`              | sudo apt remove vlc -y                         |                   |
-| apt --purge     | use this option whenever you want to remove a package, purging means ask to clear any configuration | sudo apt remove --purge `<package name>` -y   | sudo apt remove --purge vlc -y                 | [sudo](#extra_05) |
-| apt list        | list installed or any existing packages in ubuntu repositories                                      | sudo apt list --installed                     |                                                |                   |
-| apt --reinstall | reinstall packages                                                                                  | sudo apt install --reinstall `<package name>` | sudo apt install --reinstall vlc sshfs fuse -y |                   |
+| command                | description                                                                                         | structure                                     | example                                        | detail ID         |
+|------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------|------------------------------------------------|-------------------|
+| sudo                   | sudo means *super power do* what i want                                                             | sudo `<command>`                              | sudo mkdir                                     | [sudo](#extra_04) |
+| sudo su                | change user to `@root` for amitting sudo from any command                                           |                                               |                                                |                   |
+| su                     | sometimes a machine has multiple user, to switch to another user you need this command              | su `username`                                 | su illustray                                   |                   |
+| apt                    | command line interface or a command to install or remove packages in linux distros                  |                                               |                                                |                   |
+| apt install            | install packages from repository                                                                    | sudo apt install `<package name>`             | sudo apt install vlc                           |                   |
+| apt -y                 | use `-y` option to pass yes if command needs permission, it gives yes to any asking for permissions | sudo apt `<option>` -y                        | sudo apt install vlc -y                        |                   |
+| apt remove             | remove packages                                                                                     | sudo apt remove `<package name>`              | sudo apt remove vlc -y                         |                   |
+| apt --purge            | use this option whenever you want to remove a package, purging means ask to clear any configuration | sudo apt remove --purge `<package name>` -y   | sudo apt remove --purge vlc -y                 | [sudo](#extra_05) |
+| apt list               | list installed or any existing packages in ubuntu repositories                                      | sudo apt list --installed                     |                                                |                   |
+| apt --reinstall        | reinstall packages                                                                                  | sudo apt install --reinstall `<package name>` | sudo apt install --reinstall vlc sshfs fuse -y |                   |
+| do-release-upgrade     | upgrade operation system to latest release                                                          |                                               | do-release-upgrade                             |                   |
+| do -release-upgrade -V | show operation system version                                                                       |                                               |                                                |                   |
+| do-release-upgrade -d  | upgrade to development release                                                                      |                                               |                                                |                   |
 
 ## services commands
 
