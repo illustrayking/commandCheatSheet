@@ -99,6 +99,15 @@ in this file i'm going to write down every comand i learn
 | ufw reset      | reset firewall to default                            |                                | sudo ufw reset                    |           |
 | ufw status     | status firewall to print all allowed or denyed rules |                                | sudo ufw status                   |           |
 
+## shell and script commands
+
+| commands | description                                                                                                               | structure                     | example               | detail ID |
+|----------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------|-----------------------|-----------|
+| chsh     | chsh or *change shell* use for changing shell interface to another one in terminal, such as zsh oth-my-zsh bash and etc.. | chsh -s $(which `shell name`) | chsh -s $(which zsh)  |           |
+| source   | source comamnd using for compiling and running script file like file                                                      | source `script file`          | source /etc/shell.zsh |           |
+| bash     | same as *source* command it is used to run script                                                                         | bash `file .sh`               | bash run.sh           |           |
+| .        | abbreviation for source command, you can simply put `.` instead of writing `source` command                               | . `script file`               | . ./install.sh        |           |
+
 ## some important notes
 
 ### how to disable ring bell inside terminal
