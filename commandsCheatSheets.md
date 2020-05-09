@@ -141,3 +141,27 @@ default terminal which mostly call `bash` has specific file call `bashrc`, so if
 *you can find `bashrc` file inside your home directory `~`*
 
 *for a popular shell such as `zsh` you must open `zshrc` file inside home directory*
+
+### what is *.sh* file
+
+.sh file format is a script programmed file for a terminal, it means you can write your terminal programes or simply write bunch of commands inside this file format and
+
+expect terminal run your commands or any script you have written inside your file
+
+for example i can simply write `scp /mnt/d/text.md /etc/` inside *.sh* file and run the command without writting it everytime i need
+
+it is useful when you want to call many commands at once without writing them over and over again
+
+or even better you can create a program script file for your terminal to automate your jobs
+
+> just simply create file with `*.sh` format like *run.sh* and call it with `bash` command
+
+```
+bash run.sh
+
+bash shutdown.sh
+```
+
+#### using .sh file for automate jobs inside zshrc or bashrc file
+
+just write your desire commands inside this file and call it with `bash` command inside `.zshrc` or `.bashrc` file to even run the script automatically
