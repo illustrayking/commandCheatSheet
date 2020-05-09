@@ -98,3 +98,46 @@ in this file i'm going to write down every comand i learn
 | ufw disable    | disable firewall to work                             |                                | sudo ufw disable                  |           |
 | ufw reset      | reset firewall to default                            |                                | sudo ufw reset                    |           |
 | ufw status     | status firewall to print all allowed or denyed rules |                                | sudo ufw status                   |           |
+
+## some important notes
+
+### how to disable ring bell inside terminal
+
+sometimes some shells give you an annoying sound of *bib* for some actions such as pressing backward key or enter key which is so annoying, so if you want /
+
+to **silent** your shell
+
+> first open `/etc/inputrc` file
+
+> then write down `set bell-style none` to silent your shell
+
+### how to print command output as a text file
+
+did you know that you can save your command result as a text file? if you want to not print your command result inside your shell interface, you can send to a specific text file
+
+with specific format such as `.txt` or `.md`
+
+for doing such a thing just use `>>` to navigate command result to a text file
+
+for example
+
+```
+ping google.com -c 2 >> /mnt/d/pingResult.txt
+
+echo 'how are you' >> /mnt/d/greeting.md
+```
+### run any command when you open a tab or start the terminal
+
+usualy, i need to call a command in shell when i just start the terminal without rewriting or recalling a command everytime i just open terminal
+
+for example i want to print a messagge with `cowsay` command eveytime i open a terminal in my machine, for doing such a thing you simply need a `run in time` file
+
+a `run in time` file is an essential file for running your bash inside terminal propebly well
+
+luckily we don't need to create `run in time` files because every shell has such a file, you just need to write down you specific command which you want to run everytime
+
+default terminal which mostly call `bash` has specific file call `bashrc`, so if you put your command inside *bashrc* file you can expect terminal execute your command *automatically* everytime you create a new tab or open new terminal
+
+*you can find `bashrc` file inside your home directory `~`*
+
+*for a popular shell such as `zsh` you must open `zshrc` file inside home directory*
