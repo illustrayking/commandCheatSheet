@@ -85,5 +85,3 @@ in this file i'm going to write down every comand i learn
 |-----------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------------|-----------|
 | service               | this command gives you an ability to trun on or off the services on your machine such as apache or ssh | sudo service `<service name>` start | stop | status | restart | sudo service ssh start    |           |
 | service \--status-all | use to print all services status on terminal                                                           |                                                               | sudo service --status-all |           |
-
-
