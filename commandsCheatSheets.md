@@ -128,13 +128,13 @@ echo 'how are you' >> /mnt/d/greeting.md
 ```
 ### run any command when you open a tab or start the terminal
 
-usualy, i need to call a command in shell when i just start the terminal without rewriting or recalling a command everytime i just open terminal
+usualy, i need to call a command in shell when i just start the terminal without rewriting or recalling a command
 
 for example i want to print a messagge with `cowsay` command eveytime i open a terminal in my machine, for doing such a thing you simply need a `run in time` file
 
 a `run in time` file is an essential file for running your bash inside terminal propebly well
 
-luckily we don't need to create `run in time` files because every shell has such a file, you just need to write down you specific command which you want to run everytime
+luckily we don't need to create it because every shell has such a file, you just need to write down you specific command which you want to run everytime
 
 default terminal which mostly call `bash` has specific file call `bashrc`, so if you put your command inside *bashrc* file you can expect terminal execute your command *automatically* everytime you create a new tab or open new terminal
 
