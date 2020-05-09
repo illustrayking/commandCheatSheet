@@ -85,3 +85,16 @@ in this file i'm going to write down every comand i learn
 |-----------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------------|-----------|
 | service               | this command gives you an ability to trun on or off the services on your machine such as apache or ssh | sudo service `<service name>` start | stop | status | restart | sudo service ssh start    |           |
 | service \--status-all | use to print all services status on terminal                                                           |                                                               | sudo service --status-all |           |
+
+## firewall commands
+
+| commands       | description                                          | structure                      | example                           | detail ID |
+|----------------|------------------------------------------------------|--------------------------------|-----------------------------------|-----------|
+| ufw            | use to add or remove rule from firewall              | sudo ufw `<option>` `argument` | sudo ufw allow from 192.168.1.120 |           |
+| ufw allow      | allow a specific rule to pass from firewall          | sudo ufw allow `port`          | sudo ufw allow 1920               |           |
+| ufw allow from | use to allow an ip to access to specific application | sudo ufw allow from `ip add`   | sudo ufw allow from 192.168.1.150 |           |
+| ufw deny       | deny a rule to pass from firewall                    | sudo ufw deny `port`           | sudo ufw deny 1102                |           |
+| ufw enable     | enable firewall to work                              |                                | sudo ufw enable                   |           |
+| ufw disable    | disable firewall to work                             |                                | sudo ufw disable                  |           |
+| ufw reset      | reset firewall to default                            |                                | sudo ufw reset                    |           |
+| ufw status     | status firewall to print all allowed or denyed rules |                                | sudo ufw status                   |           |
