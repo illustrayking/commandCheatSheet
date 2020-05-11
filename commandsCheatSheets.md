@@ -193,3 +193,22 @@ just write your desire commands inside this file and call it with `bash` command
  ```
 
  you can also path the file to new directory
+
+ ### <a name="extra_03></a> using sed to modifiy text file without opening it
+
+ it is crazy to know that there is a command like `sed` can edit file without opening it
+
+ it is easy and straitforward you just need to know somethings like
+
+ option `-i` or *in place* options means save your changes in the place of saving it
+
+ ```
+ sed -i "s/current_text/new_text/" <name_of_file_to_be_modified>
+ ```
+ for example i want to change `hello world` to another thing
+
+ just write
+
+ ```
+ sed -i "s/hello world/greeting world/" talking.md
+ ```
