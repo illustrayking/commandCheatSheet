@@ -236,3 +236,33 @@ it means you can't do anything you want whenever you want
 
  sudo mkdir /etc/garbage
  ```
+
+ ### what is `!!` ?
+
+ just imagine you were commanding your machine to create a directory but you forgot to put `sudo` at the beginning of your command and then you hit enter and terminal gives an error of incomplete action
+
+so, you need to write your command once again but this time you write sudo first
+
+but imagine if you could write `sudo` or any command at first and then just hit `!` sign twice to join your previous command to forgotten command part
+
+yes, you can bring back your previous command and join it to another command you want
+
+for example 
+
+```
+mkdir /mnt/version
+
+error: you can't perform this action: permission denied
+
+sudo !!
+
+sudo mkdir /mnt/version
+
+sed -i "s/new/old/"
+
+error
+
+!! config.md
+
+sed -i "s/new/old/" config.md
+```
