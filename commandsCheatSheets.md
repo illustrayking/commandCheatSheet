@@ -178,3 +178,18 @@ bash shutdown.sh
 #### using .sh file for automate jobs inside zshrc or bashrc file
 
 just write your desire commands inside this file and call it with `bash` command inside `.zshrc` or `.bashrc` file to even run the script automatically
+
+### <a name="extra_02></a> renaming files and directories using *mv* command
+ you can also use `mv` command to rename your file or any directory, just simply write new name after you call the file or directory as an argument for command like example below
+
+ ```structure
+ mv <file_path or directory_path> <new_name>
+ ```
+
+ example
+
+ ```
+ mv /mnt/d/tt.md /mnt/d/textTile.md
+ ```
+
+ you can also path the file to new directory
