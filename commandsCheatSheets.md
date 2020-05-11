@@ -212,3 +212,27 @@ just write your desire commands inside this file and call it with `bash` command
  ```
  sed -i "s/hello world/greeting world/" talking.md
  ```
+
+ ### <a name="extra_04"></a> what is sudo and why we need it
+
+ sudo means superuser do
+
+ as you already know or maybe you don't, Linux and other Linux distros are so secure 
+it means you can't do anything you want whenever you want
+
+ for example, you can't edit or modify any file inside root directories because you need a superpower to order to the machine
+
+ and also everyone who sits front of the machine is not the owner for Linux operation system so if you are a real user, you need to use sudo to perform your order due to this action Linux always ask you to type machine's password to ensure that you are the real user of this machine
+ but without sudo you can't even perform your actions because you are not the user or you're not permitted to do such a thing
+
+ for example i can't create directory inside `/etc/` directory, to do this you need to put sudo at the first of command to perform an action you want
+
+ ```
+ wrong
+
+ mkdir /etc/garbage
+
+ correct 
+
+ sudo mkdir /etc/garbage
+ ```
