@@ -83,6 +83,9 @@ in this file i'm going to write down every comand i learn
 | do -release-upgrade -V | show operation system version                                                                                                            |                                               |                                                |                      |
 | do-release-upgrade -d  | upgrade to development release                                                                                                           |                                               |                                                |                      |
 | which                  | using `which` you can find installed packages on your machine, it is useful when you want to check whether a package is installed or not | which `package name`                          | which ruby                                     |                      |
+| dpkg                   | package manager for debian, if you want to install packages with `.deb` format you need this tool to accomplish your job                 | sudo dpkg `option` `<package name>`           |                                                |                      |
+| dpkg -i                | install opr option `-i` use to install package on debian distros                                                                         | sudo dpkg -i `<package_name>`                 | sudo dpkg -i code.deb                          |                      |
+| dpkg -r --purge        | remove package from the machine and clean package configuration on the machine                                                           | sudo dpkg -r --purge `<package_name>`         | sudo dpkg -r --purge code.deb                  |                      |
 
 ## services commands
 
