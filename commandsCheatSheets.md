@@ -270,3 +270,25 @@ error
 
 sed -i "s/new/old/" config.md
 ```
+
+### what is *alias*
+
+alias is way to create shortcut keywords fro any command you want
+
+1- find your `zshrc` file or `bashrc` file 
+2- then open proper file in editor
+3- at the end of the document simply write 
+```
+alias "custom keyword=command you want to make alias"
+
+for example
+
+alias "file=explorer.exe"
+
+it means whenever i type file means explorer.exe command
+```
+4- after creating alias save your file and restart `zshrc` or `bashrc` file
+
+alias "termux-clipboard-set=clip"
+
+whenever i type `clip` in termux terminal means `termux-clipboard-set` command
